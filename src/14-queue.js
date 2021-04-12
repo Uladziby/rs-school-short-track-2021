@@ -13,15 +13,16 @@
 
 class Queue {
   get size() {
-    throw new Error('Not implemented');
+    return this.arr.length();
   }
 
-  enqueue(/* element */) {
-    throw new Error('Not implemented');
+  enqueue(element) {
+    this.arr.push(element);
   }
 
   dequeue() {
-    throw new Error('Not implemented');
+    this.arr.pop();
+    return 1;
   }
 }
 
